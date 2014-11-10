@@ -1,13 +1,54 @@
+// VARIABLES
+@red: #8C0404;
+@redred: #F22727;
+@light-gray: #F2F2F2;
+
+// LAYOUT
+
 html, body, .container {
   height: 100%;
   width: 100;
   margin: 0;
+  background: @light-gray;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 640px;
+  padding: 2rem;
 }
 
 section {
-  margin: 2rem auto;
-  max-width: 640px;
+  background: @redred;
+  color: @light-gray;
 }
+
+section:nth-child(2n + 1) {
+  background: @light-gray;
+  color: @redred;
+}
+
+// TYPOG
+
+body {
+  font-family: 'Roboto Slab', serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 5rem;
+}
+
+p {
+  font-size: 1.75rem;
+  font-weight: 300;
+}
+
+// HELPERS
 
 // Hide only visually, but have it available for screen readers
 // http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
