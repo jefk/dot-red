@@ -7,11 +7,11 @@ angular.module 'dot-red-3-main',['ngRoute']
         controller: 'MainCtrl'
 
   .controller 'MainCtrl', ($scope) ->
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma',
-      'Coffeescript',
-      'Less',
-      'Jade'
-    ]
+    intro =
+      title: "Hi, I'm Jeff"
+      description: "A freelance full-stack developer based in New York City."
+    experience =
+      title: "Experienced"
+      description: "I've worked with the best."
+
+    $scope.awesomeThings = [intro, experience]

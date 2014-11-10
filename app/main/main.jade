@@ -1,4 +1,4 @@
 h3 List of Awesome Things
-ul
-  li(ng-repeat="thing in awesomeThings").
-    {{ thing }}
+section(ng-repeat="thing in awesomeThings")
+  h3 {{ thing.title }}
+  p {{ thing.description }}
