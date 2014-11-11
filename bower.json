@@ -19,6 +19,7 @@
     "angular-route": "~1.2.14"
   },
   "dependencies": {
-    "normalize.css": "~3.0.2"
+    "normalize.css": "~3.0.2",
+    "jquery": "~2.1.1"
   }
 }

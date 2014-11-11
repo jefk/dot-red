@@ -7,5 +7,5 @@ angular.module 'dot-red-3-main',['ngRoute']
         controller: 'MainCtrl'
 
   .controller 'MainCtrl', ($scope) ->
-    # console.log $('section')
+    console.log $('section')
     # controll stuff

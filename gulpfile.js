@@ -33,7 +33,7 @@ gulp.task('testJS', function() {
 });
 
 gulp.task('templates', function() {
-  // combine compiled Jade and html template files into 
+  // combine compiled Jade and html template files into
   // build/template.js
   gulp.src(['!./app/index.jade', '!./app.index.html',
       './app/**/*.html', './app/**/*.jade'])
@@ -98,9 +98,9 @@ gulp.task('watch',function() {
 
   // reload connect server on built file change
   gulp.watch([
-      'build/**/*.html',        
+      'build/**/*.html',
       'build/**/*.js',
-      'build/**/*.css'        
+      'build/**/*.css'
   ], function(event) {
       return gulp.src(event.path)
           .pipe(connect.reload());
