@@ -7,5 +7,5 @@ angular.module 'dot-red-3-main',['ngRoute']
         controller: 'MainCtrl'
 
   .controller 'MainCtrl', ($scope) ->
-    $scope.email_address = 'kjeffk@gmail.com'
+    # console.log $('section')
     # controll stuff
