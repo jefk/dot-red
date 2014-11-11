@@ -3,6 +3,9 @@
 @redred: #F22727;
 @light-gray: #F2F2F2;
 
+@biggest: ~"screen and (min-width: 550px)";
+@smallest: ~"screen and (max-width: 350px)";
+
 // LAYOUT
 
 * {
@@ -20,7 +23,7 @@ html, body, .container {
   margin: 0 auto;
   max-width: 660px;
   padding: 2rem;
-  min-height: 550px;
+  min-height: 500px;
 }
 
 section {
@@ -45,12 +48,24 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 h3 {
-  font-size: 5rem;
+  font-size: 3rem;
+  @media @biggest {
+    font-size: 5rem;
+  }
+  @media @smallest {
+    font-size: 2rem;
+  }
 }
 
 p {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 300;
+  @media @biggest {
+    font-size: 1.75rem;
+  }
+  @media @smallest {
+    font-size: 1.25rem;
+  }
 }
 
 // HELPERS
