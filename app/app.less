@@ -1,8 +1,7 @@
 // VARIABLES
 @red: #8C0404;
 @redred: #F22727;
-// @light-gray: #F2F2F2;
-@light-gray: #FFF;
+@white: #FFF;
 
 @biggest: ~"screen and (min-width: 550px)";
 @smallest: ~"screen and (max-width: 350px)";
@@ -71,7 +70,7 @@ html, body, .container {
   height: 100%;
   width: 100;
   margin: 0;
-  background: @light-gray;
+  background: @white;
 }
 
 .content {
@@ -83,15 +82,15 @@ html, body, .container {
 
 section {
   background: @redred;
-  color: @light-gray;
+  color: @white;
 
   a {
-    color: @light-gray;
+    color: @white;
   }
 }
 
 main section:nth-child(2n) {
-  background: @light-gray;
+  background: @white;
   color: @redred;
 
   a {
