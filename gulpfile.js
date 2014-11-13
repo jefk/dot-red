@@ -94,6 +94,17 @@ gulp.task('index', function() {
     .pipe(gulp.dest('./build'));
 });
 
+gulp.task('fonts', function() {
+  gulp.src([
+      './app/fonts/*.woff',
+      './app/fonts/*.eot',
+      './app/fonts/*.svg',
+      './app/fonts/*.ttf',
+    ])
+    .pipe(gulp.dest('./build/fonts'));
+});
+
+
 gulp.task('watch',function() {
 
   // reload connect server on built file change
@@ -120,4 +131,4 @@ gulp.task('connect', connect.server({
   livereload: true
 }));
 
-gulp.task('default', ['connect', 'appJS', 'testJS', 'templates', 'appCSS', 'index', 'libJS', 'libCSS', 'watch']);
+gulp.task('default', ['connect', 'appJS', 'testJS', 'templates', 'appCSS', 'index', 'libJS', 'libCSS', 'fonts', 'watch']);
