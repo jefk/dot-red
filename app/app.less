@@ -1,5 +1,4 @@
 // VARIABLES
-@red: #8C0404;
 @redred: #F22727;
 @white: #FFF;
 
@@ -78,6 +77,10 @@ html, body, .container {
   max-width: 660px;
   padding: 2rem;
   min-height: 500px;
+
+  @media @smallest {
+    min-height: 400px;
+  }
 }
 
 section {
