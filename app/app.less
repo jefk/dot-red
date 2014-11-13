@@ -13,6 +13,10 @@ ul {
   padding: 0;
 }
 
+.icon {
+  text-decoration: none;
+}
+
 // TYPOG
 
 body {
@@ -63,7 +67,6 @@ aside {
   font-size: 0.8rem;
 }
 
-
 // LAYOUT
 
 * {
@@ -86,6 +89,18 @@ html, body, .container {
   @media @smallest {
     min-height: 400px;
   }
+
+  >* {
+    margin-bottom: 1em;
+  }
+
+  >*:last-child {
+    margin-bottom: 0;
+  }
+
+  h3 {
+    margin-bottom: 0.25em;
+  }
 }
 
 section {
@@ -106,19 +121,13 @@ main section:nth-child(2n) {
   }
 }
 
-h3 {
-  margin-bottom: 0.25em;
-}
+// Components
 
-p {
-  margin-bottom: 1em;
+.profiles li {
+  font-size: 1.75em;
+  display: inline-block;
+  margin-right: 0.5em;
 }
-
-p:last-child {
-  margin-bottom: 0;
-}
-
-// HELPERS
 
 // Hide only visually, but have it available for screen readers
 // http://snook.ca/archives/html_and_css/hiding-content-for-accessibility

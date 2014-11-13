@@ -7,5 +7,12 @@ angular.module 'dot-red-3-main',['ngRoute']
         controller: 'MainCtrl'
 
   .controller 'MainCtrl', ($scope) ->
-    console.log $('section')
-    # controll stuff
+    linkedin =
+      href: 'https://www.linkedin.com/in/jefkahn'
+      icon_class: 'linkedin'
+
+    github =
+      href: 'https://github.com/jefk'
+      icon_class: 'github'
+
+    $scope.profiles = [linkedin, github]
