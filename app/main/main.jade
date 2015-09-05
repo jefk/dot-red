@@ -1,13 +1,13 @@
 h1.visuallyhidden Jeff Kahn
-h2.visuallyhidden Freelance Full-Stack Developer in NYC
+h2.visuallyhidden Freelance Full-Stack Developer in Seattle
 
 main
 
   section
     .content
       h3 Hi, I'm Jeff.
-      p A freelance full-stack developer based in New York City.
-      p The best way to contact me is <a href="mailto:kjeffk@gmail.com">kjeffk@gmail.com</a>.
+      p A freelance full-stack developer based in Seattle.
+      p The best way to contact me is #[a(href="mailto:kjeffk@gmail.com") kjeffk@gmail.com].
       ul.profiles
         li(ng-repeat="profile in profiles")
           a.icon(target='_blank' class='icon-{{ profile.icon_class }}' href='{{ profile.href }}')
@@ -18,11 +18,11 @@ main
       h3 Experienced.
       p
         | I've worked with the best.
-        | After <a target="_blank" href="http://www.compling.uw.edu/">grad school</a>,
-        | I worked at <a target="_blank" href="https://kindle.amazon.com/">Amazon</a>,
-        | <a target="_blank" href="http://www.nytimes.com/2009/09/23/dining/23recipes.html">two</a>
-        | <a target="_blank" href="http://www.crunchbase.com/organization/livestar">startups</a>,
-        | and the <a target="_blank" href="http://substantial.com/">best software shop</a> in Seattle.
+        | After #[a(target="_blank" href="http://www.compling.uw.edu/") grad school],
+        |  I worked at #[a(target="_blank" href="https://kindle.amazon.com/") Amazon],
+        |  #[a(target="_blank" href="http://www.nytimes.com/2009/09/23/dining/23recipes.html") two]
+        |  #[a(target="_blank" href="http://www.crunchbase.com/organization/livestar") startups],
+        |  and the #[a(target="_blank" href="http://substantial.com/") best software shop] in Seattle.
 
   section
     .content
