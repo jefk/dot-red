@@ -1,4 +1,4 @@
-angular.module 'dot-red-3-main',['ngRoute']
+angular.module 'dot-red-3'
 
   .config ($routeProvider) ->
     $routeProvider
