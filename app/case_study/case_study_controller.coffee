@@ -4,5 +4,4 @@ angular.module 'dot-red-3'
 
     $routeProvider
       .when '/case-study',
-        templateUrl: 'main/main.html'
-        controller: 'MainCtrl'
+        templateUrl: 'case_study/case_study.html'
