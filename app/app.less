@@ -1,6 +1,7 @@
 // VARIABLES
 @redred: #F22727;
 @white: #FFF;
+@black: #000;
 
 @biggest: ~"screen and (min-width: 550px)";
 @smallest: ~"screen and (max-width: 350px)";
@@ -129,6 +130,21 @@ main section:nth-child(2n) {
 
   a {
     color: @redred;
+  }
+}
+
+.case {
+  section {
+    background: @black;
+  }
+
+  section:nth-child(2n) {
+    background: @white;
+    color: @black;
+
+    a {
+      color: @white;
+    }
   }
 }
 
