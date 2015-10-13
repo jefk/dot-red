@@ -104,6 +104,14 @@ gulp.task('fonts', function() {
     .pipe(gulp.dest('./build/fonts'));
 });
 
+gulp.task('images', function() {
+  gulp.src([
+      './app/images/*.png',
+    ])
+    .pipe(gulp.dest('./build/images'));
+});
+
+
 
 gulp.task('watch',function() {
 
@@ -113,8 +121,8 @@ gulp.task('watch',function() {
       'build/**/*.js',
       'build/**/*.css'
   ], function(event) {
-      return gulp.src(event.path)
-          .pipe(connect.reload());
+    return gulp.src(event.path)
+      .pipe(connect.reload());
   });
 
   // watch files to build
@@ -131,4 +139,4 @@ gulp.task('connect', connect.server({
   livereload: true
 }));
 
-gulp.task('default', ['connect', 'appJS', 'testJS', 'templates', 'appCSS', 'index', 'libJS', 'libCSS', 'fonts', 'watch']);
+gulp.task('default', ['connect', 'appJS', 'testJS', 'templates', 'appCSS', 'index', 'libJS', 'libCSS', 'fonts', 'images', 'watch']);
